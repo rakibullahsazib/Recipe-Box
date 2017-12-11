@@ -1,5 +1,5 @@
-build/bundle.js.map
-build/style.css.map
+bundle.js.map
+style.css.map
 node_modules/
 package-lock.json
 webpack.config.js
