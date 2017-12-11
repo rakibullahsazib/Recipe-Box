@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import $ from 'jquery';
 
 function splitIngredientsF(str){
     let arr= str.split(",");
@@ -76,7 +77,8 @@ export function showDetails(i){
         </div>
     );
 
-
+    $("#btn-show-details"+i).attr("hidden","hidden"); 
+    $("#btn-hide-details"+i).removeAttr("hidden");
     ReactDOM.render(elementToRender, document.getElementById("details"+i)); 
 }
 
