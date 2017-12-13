@@ -63,17 +63,23 @@ class NewForm extends React.Component{
     render(){
         return (
             <div id="form">
-                <div>Recipe Name</div>
-                <input type ="text" id="form-input-name" placeholder="New Item" value={this.state.name} onChange={this.handleNameChange}/>
-                <div>Ingredients</div>
-                <textarea id="form-input-ingredients" placeholder="Put Comma Between Ingredients" value={this.state.ingredients} onChange={this.handleIngredientsChange}>
-                </textarea>
-                <div>Instructions</div>
-                <textarea id="form-input-instructions" placeholder="Tell people how to make this dish" value={this.state.instructions} onChange={this.handleInstructionsChange}>   
-                </textarea>
-                <div>
+                <div id="form-name">
+                    <div>Recipe Name</div>
+                    <input type ="text" id="form-input-name" placeholder="New Item" value={this.state.name} onChange={this.handleNameChange}/>
+                </div>
+                <div id="form-ingredients">
+                    <div>Ingredients</div>
+                    <textarea id="form-input-ingredients" placeholder="Put Comma Between Ingredients" value={this.state.ingredients} onChange={this.handleIngredientsChange}>
+                    </textarea>
+                </div>
+                <div id="form-instructions">
+                    <div>Instructions</div>
+                    <textarea id="form-input-instructions" placeholder="Tell people how to make this dish" value={this.state.instructions} onChange={this.handleInstructionsChange}>   
+                    </textarea>
+                </div>
+                <div id="form-btn">
                     <button id="form-btn-save" onClick={this.saveForm}>save</button>
-                    <button id="form-btn-cancel" onClick={this.clearForm}>cancel</button>
+                    <button id="form-btn-cancel" onClick={this.clearForm}>cancel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                 </div>
             </div> 
         );
